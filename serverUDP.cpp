@@ -1,11 +1,3 @@
-/*
-Author: Yingfei Chen
-Class: ECE 6122
-Date£º 2019/10/23
-Description: 
-Realize the server UDP function
-*/
-
 #pragma warning(disable : 4996)
 
 #include <stdio.h>
