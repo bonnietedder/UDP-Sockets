@@ -1,8 +1,8 @@
-## UDP-Sockets
+# UDP-Sockets
 
 a console program that takes as a command line argument the port number on which the UDP Server will receive messages.
 
-# UDP Server 
+## UDP Server 
 The UDP server collects parts of a larger composite message from the clients. The UDP server collects these message parts from different clients and assembles them in order, based on the lSeqNum. The UDP server keeps a running list of all clients that have sent a message to it and will broadcast the composite message to all clients when commanded. The UDP server needs to be able to receive data from clients without blocking the main application thread. The program needs to respond to user input while handling socket communications at the same time.
 
 The program should continuously prompt the user for commands to execute like so:
@@ -34,7 +34,7 @@ The UDP server needs to have the following functionality when receiving messages
 • If nType == 3 the server immediately sends to all clients the current composite message and clears out the composite message.
 If the composite message becomes larger than 1000 then the composite message (up to 1000) is immediately set out to all clients and any remaining characters are used to start a new composite message with a lSeqNum = 0.
 
-# UDP Client
+## UDP Client
 a console program that takes as a command line argument the IP Address and port number of the server as shown below:
 ./a.out localhost 51717
 The program should prompt the user for inputs and display any messages received.
